@@ -1,0 +1,10 @@
+{
+    "theme_color" : "#9bff3a",
+    "background_color" : "#9bff3a",
+    "display" : "fullscreen",
+    "scope" : "/",
+    "start_url" : "/",
+    "description" : "Hewlo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^.",
+    "short_name" : "HasX",
+    "name" : "HasX"
+}
