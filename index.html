@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>HasX</title>
     <meta charset="UTF-8">
@@ -11,254 +12,180 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/cdn/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/cdn/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
-    <meta name="description" content="Hewlo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^.">
-    <meta name="keywords" content="HasX, HasX.me, HasX's, HasX#1337, HasX1337, HasX1337's, HasX's web, Hasi, Hasi.me, Hasi's, Hasi#1337, Hasi1337, Hasi1337's, Hasi's web, Hasi's website, Hasi's website, Ha">
-    <meta name ="theme-color" content="#9bff3a">
-    <meta name="msapplication-TileColor" content="#9bff3a">
-    <meta name="msapplication-TileImage" content="https://i.imgur.com/PYNSGPP.png">
-    <meta name="application-name" content="HasX">
-    <meta name="msapplication-tooltip" content="Hewwo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^.">
-    <meta name="msapplication-starturl" content="https://hasx.me">
-    <meta name="msapplication-navbutton-color" content="#9bff3a">
-    <meta name="twitterIamge" content="https://i.imgur.com/PYNSGPP.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@itzhasx">
-    <meta name="twitter:creator" content="@itzhasx">
-    <meta name="twitter:title" content="HasX">
-    <meta name="twitter:description" content="Hewwo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^.">
+    <meta name="description"
+        content="Hewlo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^." />
+    <meta name="keywords"
+        content="HasX, HasX.me, HasX's, HasX#1337, HasX1337, HasX1337's, HasX's web, Hasi, Hasi.me, Hasi's, Hasi#1337, Hasi1337, Hasi1337's, Hasi's web, Hasi's website, Hasi's website, Ha" />
+    <meta name="theme-color" content="#9bff3a">
     <meta name="twitter:image" content="https://i.imgur.com/PYNSGPP.png">
-    <meta property="og:title" content="HasX">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hasx.me">
-    <meta property="og:image" content="https://i.imgur.com/PYNSGPP.png">
-    <meta property="og:description" content="Hewwo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^.">
-    <meta property="og:site_name" content="HasX">
-    <meta property="og:locale" content="en_US">
     <meta name="author" content="HasX">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            border-left: 5px solid #333333;
+            border-bottom: 5px solid #333333;
+        }
+
+        .box {
+            width: 100%;
+            height: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #dddddd;
+            margin-top: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #headline {
+            text-decoration: underline;
+        }
+
+        .typing-indicator::after {
+            content: "|";
+            display: inline-block;
+            opacity: 0;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .emoji {
+            font-size: 64px;
+            animation-name: wave;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            position: relative;
+            transform: scaleX(-1);
+            display: inline-block;
+
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0.0deg)
+            }
+
+            10% {
+                transform: rotate(14.0deg)
+            }
+
+            20% {
+                transform: rotate(-8.0deg)
+            }
+
+            30% {
+                transform: rotate(14.0deg)
+            }
+
+            40% {
+                transform: rotate(-4.0deg)
+            }
+
+            50% {
+                transform: rotate(10.0deg)
+            }
+
+            60% {
+                transform: rotate(0.0deg)
+            }
+
+            100% {
+                transform: rotate(0.0deg)
+            }
+        }
+    </style>
 </head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <body>
-    <div id="particles-js"></div>
-    <div id="box1" class="box"
-        style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute;"
-        draggable="true">
-        <h1 style="color: #fff; text-align: center; font-size: 20px; padding: 5px;">Find me at</h1>
-        <p style="color: #fff;"><i class="fas fa-globe"></i> Website: <a href="https://hasx.me"
-                style="color: #fff;">hasx.me <a style="font-size:10px;">(This)</a></p>
-        <p style="color: #fff;"><i class="fas fa-envelope"></i> Email: <a href="mailto:hasx@hasx.me"
-                style="color: #fff;">hasx@hasx.me</a></p>
-        <p style="color: #fff;"><i class="fab fa-github"></i> GitHub: <a href="https://github.com/has-x"
-                style="color: #fff;">Has-X </a></p>
-        <p style="color: #fff;"><i class="fa-brands fa-discord"></i> Discord: HasX#1337</p>
-        <p style="color: #fff;"><i class="fa-brands fa-twitter"></i> Twitter: <a href="https://twitter.com/itzhasx"
-                style="color: #fff;">@hasx1337</a></p>
-        <p style="color: #fff;"><i class="fa-brands fa-instagram"></i> Instagram: <a
-                href="https://instagram.com/developer_hasx" style="color: #fff;">@developer_hasx</a></p>
+    <div class="container">
+        <div class="text">
+            <h1 id="hasxHeadline">
+            </h1>
+            <p< /p>
+                <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of course foxes ^^.</p>
+                </p>
+        </div>
+        <div class="image">
+            <img src="https://i.imgur.com/zhtrbQ1.gif" alt="World Icon">
+        </div>
     </div>
-
-    <div id="box2" class="box"
-        style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute;"
-        draggable="true">
-        <h1 style="color: #fff; text-align: center; font-size: 20px; padding: 5px;">Who am I</h1>
-        <p style="color: #fff;"><i class="fas fa-user"></i> Name: HasX.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-heart"></i> Taken by Feed.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-mars-double"></i> Gay.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-graduation-cap"></i> Pronouns: He/They,</p>
-        <p style="color: #fff;"><i class="fa-solid fa-code"></i> I'm a developer,</p>
-        <p style="color: #fff;"><i class="fa-solid fa-shield-halved"></i> and CySec engineer.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-fingerprint"></i> I don't like to be tr@ck3d.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-paw"></i> Furry fox.</p>
-    </div>
-
-    <div id="box3" class="box"
-        style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute;"
-        draggable="true">
-        <h1 style="color: #fff; text-align: center; font-size: 20px; padding: 5px;">I stand for</h1>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> LGBTQIA+ supporter</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Black Lives Matter</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-racism</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-sexism</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-homophobia</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-transphobia</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-ableism</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-ageism</p>
-        <p style="color: #fff;"><i class="fa-regular fa-heart"></i> Anti-classism</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-antisemitism</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-xenophobia</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-fascism</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-nazism</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-white supremacy</p>
-        <p style="color: #fff;"><i class="fa-solid fa-ban"></i> Anti-capitalism</p>
-    </div>
-
-    <div id="box4" class="box"
-        style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute;"
-        draggable="true">
-        <h1 style="color: #fff; text-align: center; font-size: 20px; padding: 5px;">What do I support</h1>
-        <p style="color: #fff;"><i class="fa-solid fa-euro-sign"></i> European Union.</p>
-        <p style="color: #fff;"><i class="fa-regular fa-flag"></i> United Nations.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-shield"></i> NATO.</p>
-        <p style="color: #fff;"><i class="fa-solid fa-peace"></i></i> Ukraine.</p>
-    </div>
-
-    <div id="box5" class="box"
-        style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; position: absolute;"
-        draggable="true">
-        <h1 style="color: #fff; text-align: center; font-size: 20px; padding: 5px;">Few words about me</h1>
-        <p style="color: #fff;">I might be hated by someone, <br> that's okay, I won't judge you.</p>
-    </div>
-    <script>
-        var boxes = document.querySelectorAll('.box');
-
-        var colors = [
-            'rgba(255, 0, 0, 0.5)',
-            'rgba(255, 0, 255, 0.5)',
-            'rgba(0, 0, 255, 0.5)',
-            'rgba(0, 255, 255, 0.5)',
-            'rgba(0, 255, 0, 0.5)',
-            'rgba(255, 255, 0, 0.5)',
-            'rgba(255, 127, 0, 0.5)'
-        ];
-
-
-        boxes.forEach(function (box) {
-            box.addEventListener('mousedown', function (e) {
-                var mouseOffsetX = e.clientX - box.offsetLeft;
-                var mouseOffsetY = e.clientY - box.offsetTop;
-
-                document.addEventListener('dragend', function (event) {
-                    moveBox(event);
-                });
-            });
-        })
-
-        var pageWidth = window.innerWidth;
-        var pageHeight = window.innerHeight;
-
-        var maxLeft = pageWidth - box1.offsetWidth;
-        var maxTop = pageHeight - box1.offsetHeight;
-
-        function findNewCoords(box, overlapBox) {
-
-            const boxRect = box.getBoundingClientRect();
-            const overlapRect = overlapBox.getBoundingClientRect();
-            const newCoords = {
-                x: overlapRect.right + 10,
-                y: boxRect.top
-            };
-            return newCoords;
-        }
-
-        function getRandomPosition(box) {
-
-            var left = Math.floor(Math.random() * maxLeft);
-            var top = Math.floor(Math.random() * maxTop);
-            return [left, top];
-        }
-
-        function checkOverlap(box, x, y) {
-
-            const margin = 10;
-            for (let i = 0; i < boxes.length; i++) {
-                if (boxes[i] !== box) {
-                    const rect = boxes[i].getBoundingClientRect();
-                    if (x + margin >= rect.left && x - margin <= rect.right && y + margin >= rect.top && y - margin <= rect.bottom) {
-                        return boxes[i];
-                    }
-                }
-            }
-            return null;
-        }
-
-        function setBoxPosition(box) {
-            box.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            let pos = getRandomPosition(box);
-            let tries = 50;
-            box.style.left = pos[0] + "px";
-            box.style.top = pos[1] + "px";
-        }
-
-        boxes.forEach(async box => {
-            await setBoxPosition(box);
-        });
-
-
-        function moveBox(event) {
-            const box = event.target;
-            const overlap = checkOverlap(box, event.clientX, event.clientY);
-            if (overlap) {
-                const boxRect = box.getBoundingClientRect();
-                const overlapRect = overlap.getBoundingClientRect();
-                const dx = boxRect.left - overlapRect.left;
-                const dy = boxRect.top - overlapRect.top;
-                const threshold = 5;
-                if (Math.abs(dx) > Math.abs(dy)) {
-
-                    if (dx > 0) {
-                        box.style.left = (overlapRect.right + threshold) + 'px';
-                    } else {
-                        box.style.left = (overlapRect.left - boxRect.width - threshold) + 'px';
-                    }
-                } else {
-
-                    if (dy > 0) {
-                        box.style.top = (overlapRect.bottom + threshold) + 'px';
-                    } else {
-                        box.style.top = (overlapRect.top - boxRect.height - threshold) + 'px';
-                    }
-                }
-            } else {
-                box.style.left = event.clientX - box.offsetWidth / 2 + 'px';
-                box.style.top = event.clientY - box.offsetHeight / 2 + 'px';
-            }
-        }
-
-    </script>
 </body>
-
-<style>
-    html,
-    body,
-    #particles-js {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background-color: #001440;
-        background-repeat: no-repeat;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1 {
-        font-size: 4em;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        text-shadow: 0 0 1px #000;
-    }
-</style>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
     window.onload = function () {
-        particlesJS.load('particles-js', 'particles.json', function () {
-        });
-    }
-</script>
+        var emoji = document.querySelector('.emoji');
+        emoji.classList.add('waving');
+    };
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"
-    integrity="sha512-FG4FmjLeSvZ4T4WW7nwMqwA/sEzOn5l0jHjceT+N5UX/sTFaBgljBhFWpTRi+n4YuxIgvnokTX0IQ9ROE0Y0QA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    async function getFox() {
+        fetch('https://randomfox.ca/floof/')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('.image img').src = data.image;
+            });
+    }
+    getFox();
+    new TypeIt("#hasxHeadline", {
+        speed: 50,
+        startDelay: 100,
+        loop: true,
+        waitUntilVisible: true,
+    })
+        .type('Hello there <div class="emoji">&#x1F44B;</div>', { delay: 1000 })
+        .delete()
+        .type('Your time is currently: <em><strong class="font-semibold">' + new Date().toLocaleTimeString(
+            'hu-HU', { hour12: false, hour: "numeric", minute: "numeric" }
+        ) + '</strong></em>', { delay: 1000 })
+        .delete()
+        .type('Enjoy your stay <div class="emoji">&#x2615</div>', { delay: 1000 })
+        .go();
+
+</script>
 
 </html>
