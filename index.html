@@ -30,8 +30,10 @@
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            height: 65vh;
+            justify-content: center;
+            margin: 10px;
         }
 
         .line-breaker {
@@ -44,6 +46,7 @@
             padding: 20px;
             font-size: 24px;
             line-height: 1.5;
+            text-align: center;
         }
 
         .image {
@@ -54,11 +57,13 @@
             position: relative;
             overflow: hidden;
             border-radius: 10px;
+            max-width: 300px;
+            margin: 20px;
         }
 
         .image img {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
             object-position: center;
             border-radius: 10px;
@@ -66,87 +71,8 @@
             border-bottom: 5px solid #333333;
         }
 
-        .box {
-            width: 100%;
-            height: 30px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            border: 1px solid #dddddd;
-            margin-top: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        #headline {
-            text-decoration: underline;
-        }
-
-        .typing-indicator::after {
-            content: "|";
-            display: inline-block;
-            opacity: 0;
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .emoji {
-            font-size: 64px;
-            animation-name: wave;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            transform-origin: bottom;
-            position: relative;
-            transform: scaleX(-1);
-            display: inline-block;
-
-        }
-
-        @keyframes wave {
-            0% {
-                transform: rotate(0.0deg)
-            }
-
-            10% {
-                transform: rotate(14.0deg)
-            }
-
-            20% {
-                transform: rotate(-8.0deg)
-            }
-
-            30% {
-                transform: rotate(14.0deg)
-            }
-
-            40% {
-                transform: rotate(-4.0deg)
-            }
-
-            50% {
-                transform: rotate(10.0deg)
-            }
-
-            60% {
-                transform: rotate(0.0deg)
-            }
-
-            100% {
-                transform: rotate(0.0deg)
-            }
-        }
-
         .boxDraver {
-            flex-basis: 30%;
+            flex-basis: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -158,18 +84,28 @@
             padding: 20px;
             margin: 20px;
             text-align: center;
-
         }
+
         .boxDraver.left {
             border-left: 5px solid #333333;
         }
 
-        .boxDraver.middle {
-            transform: rotate(0deg);
-        }
-
         .boxDraver.right {
             border-right: 5px solid #333333;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+
+            .text {
+                font-size: 36px;
+            }
+
+            .image {
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -177,11 +113,8 @@
 <body>
     <div class="container">
         <div class="text">
-            <h1 id="hasxHeadline">
-            </h1>
-            </p>
-                <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of course, foxes ^^.</p>
-                </p>
+            <h1 id="hasxHeadline"></h1>
+            <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of course, foxes ^^.</p>
         </div>
         <div class="image">
             <img src="https://i.imgur.com/zhtrbQ1.gif" alt="World Icon">
@@ -190,24 +123,24 @@
     <div class="line-breaker"></div>
     <div class="container">
         <div class="boxDraver left">
-            <div style=" font-size: 60px">📧</div>
+            <div style="font-size: 60px">📧</div>
             <div class="text">Reach me at <a href="mailto:hasx@hasx.me?subject=Hello, from HasX.me%20H">hasx@hasx.me</a></div>
         </div>
-        <div class="boxDraver middle">
-            <div style=" font-size: 60px">💚</div>
+        <div class="boxDraver">
+            <div style="font-size: 60px">💚</div>
             <div class="text">I'm taken. But still love to hear from ya all.</div>
         </div>
         <div class="boxDraver right">
-            <div style=" font-size: 60px">💻</div>
+            <div style="font-size: 60px">💻</div>
             <div class="text">I'm working on <a href="https://discord.gg/neptune">Neptune</a></div>
         </div>
     </div>
     <div class="line-breaker"></div>
-        <div class="text">
-            <p>© HasX <script>
+    <div class="text">
+        <p>© HasX <script>
                 document.write(new Date().getFullYear());
             </script>. All rights reserved.</p>
-        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
