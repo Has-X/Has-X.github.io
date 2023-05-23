@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/cdn/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <meta name="description"
-        content="Hewlo! I'm HasX! I'm the so-called Devflox, you know, that CySec engineer and Developer Furry Floxi ^^." />
+        content="Heya, I'm HasX, Cybersecurity engineer and Developer." />
     <meta name="keywords"
         content="HasX, HasX.me, HasX's, HasX#1337, HasX1337, HasX1337's, HasX's web, Hasi, Hasi.me, Hasi's, Hasi#1337, Hasi1337, Hasi1337's, Hasi's web, Hasi's website, Hasi's website, Ha" />
     <meta name="theme-color" content="#9bff3a">
@@ -31,7 +31,12 @@
         .container {
             display: flex;
             align-items: center;
-            height: 100vh;
+            height: 65vh;
+        }
+
+        .line-breaker {
+            flex-basis: 100%;
+            height: 0;
         }
 
         .text {
@@ -139,6 +144,33 @@
                 transform: rotate(0.0deg)
             }
         }
+
+        .boxDraver {
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 255, 0, 0.3);
+            border-radius: 8px;
+            border-bottom: 5px solid #333333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+
+        }
+        .boxDraver.left {
+            border-left: 5px solid #333333;
+        }
+
+        .boxDraver.middle {
+            transform: rotate(0deg);
+        }
+
+        .boxDraver.right {
+            border-right: 5px solid #333333;
+        }
     </style>
 </head>
 
@@ -147,7 +179,7 @@
         <div class="text">
             <h1 id="hasxHeadline">
             </h1>
-            <p< /p>
+            </p>
                 <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of course foxes ^^.</p>
                 </p>
         </div>
@@ -155,6 +187,27 @@
             <img src="https://i.imgur.com/zhtrbQ1.gif" alt="World Icon">
         </div>
     </div>
+    <div class="line-breaker"></div>
+    <div class="container">
+        <div class="boxDraver left">
+            <div style=" font-size: 60px">📧</div>
+            <div class="text">Reach me at <a href="mailto:hasx@hasx.me?subject=Hello, from HasX.me%20H">hasx@hasx.me</a></div>
+        </div>
+        <div class="boxDraver middle">
+            <div style=" font-size: 60px">💚</div>
+            <div class="text">I'm taken. But still love to hear from ya all.</div>
+        </div>
+        <div class="boxDraver right">
+            <div style=" font-size: 60px">💻</div>
+            <div class="text">I'm working on <a href="https://dsicord.gg/neptune">Neptune</a></div>
+        </div>
+    </div>
+    <div class="line-breaker"></div>
+        <div class="text">
+            <p>© <script>
+                document.write(new Date().getFullYear());
+            </script> HasX. All rights reserved.</p>
+        </div>
 </body>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script>
@@ -185,7 +238,6 @@
         .delete()
         .type('Enjoy your stay <div class="emoji">&#x2615</div>', { delay: 1000 })
         .go();
-
 </script>
 
 </html>
