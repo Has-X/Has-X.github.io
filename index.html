@@ -12,14 +12,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/cdn/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/cdn/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
-    <meta name="description"
-        content="Heya, I'm HasX, Cybersecurity engineer and Developer." />
+    <meta name="description" content="Heya, I'm HasX, Cybersecurity engineer and Developer." />
     <meta name="keywords"
         content="HasX, HasX.me, HasX's, HasX#1337, HasX1337, HasX1337's, HasX's web, Hasi, Hasi.me, Hasi's, Hasi#1337, Hasi1337, Hasi1337's, Hasi's web, Hasi's website, Hasi's website, Ha" />
     <meta name="theme-color" content="#9bff3a">
     <meta name="twitter:image" content="https://i.imgur.com/PYNSGPP.png">
     <meta name="author" content="HasX">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; img-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js https://unpkg.com/; style-src 'self' 'unsafe-inline' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; font-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; connect-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; frame-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; object-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; media-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; child-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/;">    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; img-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js https://unpkg.com/; style-src 'self' 'unsafe-inline' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; font-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; connect-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; frame-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; object-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; media-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/; child-src 'self' https://randomfox.ca/ https://i.imgur.com/ https://cdn.jsdelivr.net/;">
+    <meta name="referrer" content="no-referrer">
     <meta http-equiv="X-Frame-Options" content="deny">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -75,8 +76,24 @@
             border-bottom: 5px solid #333333;
         }
 
-        .boxDraver {
-            flex-basis: 100%;
+        .fourBoxDraver {
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fourBoxDraver .twoContainer {
+            display: flex;
+            flex-wrap: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .fourBoxDraver .boxDraver {
+            flex-basis: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -88,14 +105,6 @@
             padding: 20px;
             margin: 20px;
             text-align: center;
-        }
-
-        .boxDraver.left {
-            border-left: 5px solid #333333;
-        }
-
-        .boxDraver.right {
-            border-right: 5px solid #333333;
         }
 
         @media only screen and (min-width: 600px) {
@@ -110,6 +119,8 @@
             .image {
                 max-width: none;
             }
+
+
         }
     </style>
 </head>
@@ -118,32 +129,46 @@
     <div class="container">
         <div class="text">
             <h1 id="hasxHeadline"></h1>
-            <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of course, foxes ^^.</p>
+            <p>Hello World! I'm HasX, a Cyber Security engineer and Developer. Keen on Privacy and Human Rights, and of
+                course, foxes ^^.</p>
         </div>
         <div class="image">
             <img src="https://i.imgur.com/zhtrbQ1.gif" alt="World Icon">
         </div>
     </div>
     <div class="line-breaker"></div>
-    <div class="container">
-        <div class="boxDraver left">
-            <div style="font-size: 60px">📧</div>
-            <div class="text">Reach me at <a href="mailto:hasx@hasx.me?subject=Hello HasX! WebChat (Make sure, to NOT remove WebChat)">hasx@hasx.me</a></div>
+
+    <div class="fourBoxDraver">
+        <div class="twoContainer">
+            <div class="boxDraver">
+                <div style="font-size: 60px">📧</div>
+                <div class="text">Reach me at <a href="mailto:hasx@hasx.me?subject=Hello HasX! WebChat (Make sure, to NOT remove WebChat)">hasx@hasx.me
+                    </a>.</div>
+            </div>
+            <div class="boxDraver">
+                <div style="font-size: 60px">💚</div>
+                <div class="text">I'm taken. But still love to hear from ya all.</div>
+            </div>
         </div>
-        <div class="boxDraver">
-            <div style="font-size: 60px">💚</div>
-            <div class="text">I'm taken. But still love to hear from ya all.</div>
-        </div>
-        <div class="boxDraver right">
-            <div style="font-size: 60px">💻</div>
-            <div class="text">I'm working on <a href="https://discord.gg/neptune">Neptune</a></div>
+        <div class="twoContainer">
+            <div class="boxDraver">
+                <div style="font-size: 60px">💻</div>
+                <div class="text">I'm working on <a href="https://discord.gg/neptune">Neptune</a>.</div>
+            </div>
+            <div class="boxDraver">
+                <div style="font-size: 60px">💬</div>
+                <div class="text">Message me on <a href="https://threema.id/5E2TCV9K">threema</a>.</div>
+            </div>
         </div>
     </div>
+
     <div class="line-breaker"></div>
     <div class="text">
-        <p>© HasX <script>
+        <p>© HasX
+            <script>
                 document.write(new Date().getFullYear());
-            </script>. All rights reserved.</p>
+            </script>. All rights reserved.
+        </p>
     </div>
 </body>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
